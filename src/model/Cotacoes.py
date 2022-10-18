@@ -3,10 +3,10 @@
 from model.fundo import Fundos
 
 
-class Cotacoes (Fundos):
+class Cotacoes ():
 
-    def __init__(self, abertura, fechamento, minimo, maximo, volume_cotas, mes, nome, ticker)  -> None:
-        super().__init__(nome, ticker);
+    def __init__(self, abertura, fechamento, minimo, maximo, volume_cotas, mes, ticker)  -> None:
+        super().__init__(ticker);
         self.__abertura = abertura
         self.__fechamento = fechamento 
         self.__minimo = minimo 
