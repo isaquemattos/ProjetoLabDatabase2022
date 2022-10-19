@@ -1,6 +1,12 @@
 import datetime
 from model.fundos import Fundo
 
+############################################################
+#Programa model.Cotacoes
+#AUTOR.......: Daniel Marinho 
+#DATA........: 18/10/2022
+#DESCRICAO...: class Cotacao  
+############################################################
 
 class Cotacao():
 
@@ -27,13 +33,13 @@ class Cotacao():
     def get_Maximo(self):
         return self.maximo
     
-    def get_volume_Cotas(self):
+    def get_Volume_Cotas(self):
         return self.volume_cotas
 
-    def get_mes(self):
+    def get_Mes(self):
         return self.mes
     
-    def set_fundo(self, fundo) -> Fundo:
+    def set_Fundo(self, fundo:Fundo) -> Fundo:
         self.fundo = fundo
     
     def set_Abertura(self, abertura):

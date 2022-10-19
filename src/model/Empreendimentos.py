@@ -1,8 +1,11 @@
+############################################################
+#Programa model.Empreendimentos
+#AUTOR.......: Daniel Marinho 
+#DATA........: 18/10/2022
+#DESCRICAO...: class Empreendimento  
+############################################################
 
-# #
-# Falta corrigir essa class 
-# #
-class empreendimentos():
+class Empreendimento():
 
     def __init__(self, segmento, nome) -> None:
         super.__init__(nome, segmento)

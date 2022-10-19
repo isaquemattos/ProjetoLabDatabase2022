@@ -1,19 +1,23 @@
+from Empreendimentos import Empreendimento
 
-# #
-# Falta corrigir essa class 
-# #
+############################################################
+#Programa model.Emderecos
+#AUTOR.......: Daniel Marinho 
+#DATA........: 18/10/2022
+#DESCRICAO...: class enderecos 
+############################################################
 
 class endrecos():
 
-    def __init__(self, emrpeendimento, endereco, bairro, cidade, area_bruta, nome, ticker) -> None:
-        self.empreendimento = emrpeendimento
-        self.endereco = endereco
-        self.bairro = bairro
-        self.cidade = cidade 
-        self.area_bruta = area_bruta
+    def __init__(self, empreendimento:Empreendimento, endereco:str=None, bairro:str=None, cidade:str=None, area_bruta:float[9:3]=None) -> None:
+        self.set_Empreendimento(empreendimento) #Class Empreendimento
+        self.set_Endereco(endereco)
+        self.set_Bairro(bairro)
+        self.set_Cidade(cidade) 
+        self.set_Area_Bruta(area_bruta)
         
 
-    def get_Empreendimento(self):
+    def get_Empreendimento(self) -> Empreendimento: #Class Empreendimento
         return self.empreendimento
 
     def get_Endereco(self):
@@ -28,7 +32,7 @@ class endrecos():
     def get_Area_Bruta(self):
         return self.area_bruta
 
-    def set_Empreendimento(self, empreendimento):
+    def set_Empreendimento(self, empreendimento:Empreendimento)-> Empreendimento: #Class Empreendimento
         self.empreendimento = empreendimento
 
     def set_Endereco(self, endereco):
