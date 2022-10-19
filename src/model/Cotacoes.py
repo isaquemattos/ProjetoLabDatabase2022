@@ -1,52 +1,55 @@
+import datetime
+from model.fundos import Fundo
 
 
-from model.fundo import Fundos
+class Cotacao():
+
+    def __init__(self, abertura:int=None, fechamento:int=None, 
+                       minimo:int=None, maximo:int=None, volume_cotas:int=None, mes:datetime=None, fundo:Fundo=None)  -> None:
+        self.set_fundo(fundo) # class Fundos
+        self.set_Abertura(abertura)
+        self.set_Fechamento(fechamento) 
+        self.set_Minimo(minimo) 
+        self.set_Maximo(maximo)
+        self.set_Volume_Cotas(volume_cotas)
+        self.set_Mes(mes)
 
 
-class Cotacoes ():
-
-    def __init__(self, abertura, fechamento, minimo, maximo, volume_cotas, mes, ticker)  -> None:
-        super().__init__(ticker);
-        self.__abertura = abertura
-        self.__fechamento = fechamento 
-        self.__minimo = minimo 
-        self.__maximo = maximo
-        self.__volume_cotas = volume_cotas
-        self.__mes = mes
-
-
-    def get_Abertura(self):
-        return self.__abertura
+    def get_Abertura(self) -> int:
+        return self.abertura
 
     def get_Fechamento(self):
-        return self.__fechamento
+        return self.fechamento
 
     def get_Minimo(self):
-        return self.__minimo
+        return self.minimo
 
     def get_Maximo(self):
-        return self.__maximo
+        return self.maximo
     
     def get_volume_Cotas(self):
-        return self.__volume_cotas
+        return self.volume_cotas
 
     def get_mes(self):
-        return self.__mes
-
+        return self.mes
+    
+    def set_fundo(self, fundo) -> Fundo:
+        self.fundo = fundo
+    
     def set_Abertura(self, abertura):
-        self.__abertura = abertura
+        self.abertura = abertura
 
-    def set_Fechamento(self, minimo):
-        self.__minimo = minimo
+    def set_Fechamento(self, fechamento):
+        self.fechamento = fechamento
 
     def set_Minimo(self, minimo):
-        self.__minimo = minimo
+        self.minimo = minimo
 
     def set_Maximo (self, maximo):
-        self.__maximo = maximo 
+        self.maximo = maximo 
 
     def set_Volume_Cotas(self, volume_cotas):
-        self.__volume_cotas = volume_cotas
+        self.volume_cotas = volume_cotas
 
     def set_Mes(self, mes):
-        self.__mes = mes
+        self.mes = mes

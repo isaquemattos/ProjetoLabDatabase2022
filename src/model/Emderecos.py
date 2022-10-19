@@ -1,46 +1,47 @@
-from model.fundo import Fundos 
 
+# #
+# Falta corrigir essa class 
+# #
 
-class endrecos(Fundos):
+class endrecos():
 
     def __init__(self, emrpeendimento, endereco, bairro, cidade, area_bruta, nome, ticker) -> None:
-        super.__init__(nome, ticker)
-        self.__empreendimento = emrpeendimento
-        self.__endereco = endereco
-        self.__bairro = bairro
-        self.__cidade = cidade 
-        self.__area_bruta = area_bruta
+        self.empreendimento = emrpeendimento
+        self.endereco = endereco
+        self.bairro = bairro
+        self.cidade = cidade 
+        self.area_bruta = area_bruta
         
 
     def get_Empreendimento(self):
-        return self.__empreendimento
+        return self.empreendimento
 
     def get_Endereco(self):
-        return self.__endereco
+        return self.endereco
 
     def get_Bairro(self):
-        return self.__bairro
+        return self.bairro
 
     def get_Cidade(self):
-        return self.__cidade
+        return self.cidade
     
     def get_Area_Bruta(self):
-        return self.__area_bruta
+        return self.area_bruta
 
     def set_Empreendimento(self, empreendimento):
-        self.__empreendimento = empreendimento
+        self.empreendimento = empreendimento
 
     def set_Endereco(self, endereco):
-        self.__endereco = endereco
+        self.endereco = endereco
 
     def set_Bairro(self, bairro):
-        self.__bairro = bairro
+        self.bairro = bairro
 
     def set_Cidade(self, cidade):
-        self.__cidade = cidade
+        self.cidade = cidade
     
     def set_Area_Bruta(self, area_bruta):
-        self.__area_bruta = area_bruta
+        self.area_bruta = area_bruta
 
     def toString(self):
-        return f'Empreendimento: {self.__empreendimento} Endereço {self.__endereco} Bairro {self.__bairro} Cidade: {self.__cidade} Area Bruta: {self.__area_bruta}'
+        return f'Empreendimento: {self.empreendimento} Endereço {self.endereco} Bairro {self.bairro} Cidade: {self.cidade} Area Bruta: {self.area_bruta}'

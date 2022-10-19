@@ -1,6 +1,10 @@
-from model.fundo import Fundos
+from model.fundos import Fundos
 
 
+# #
+# Falta corrigir essa class 
+# se não dar tempo retirar o implementação 
+# #
 class relatorios(Fundos):
 
     def __init__(self, arquivo, mes, ticker, nome) -> None:

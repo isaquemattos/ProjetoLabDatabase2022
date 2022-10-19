@@ -1,7 +1,8 @@
-from model.fundo import Fundos
 
-
-class empreendimentos(Fundos):
+# #
+# Falta corrigir essa class 
+# #
+class empreendimentos():
 
     def __init__(self, segmento, nome) -> None:
         super.__init__(nome, segmento)

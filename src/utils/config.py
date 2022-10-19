@@ -7,21 +7,21 @@ MENU_PRINCIPAL = """Menu Principal
 """
 
 MENU_RELATORIOS = """Relatórios
-1 - Relatório de Fornecedores
-2 - Relatório de Pedidos
-3 - Relatório de Produtos
-4 - Relatório de Clientes
-5 - Relatório de Fornecedores
-6 - Relatório de Itens de Pedidos
+1 - Relatório de 
+2 - Relatório de 
+3 - Relatório de 
+4 - Relatório de 
+5 - Relatório de 
+6 - Relatório de  
 0 - Sair
 """
 
 MENU_ENTIDADES = """Entidades
-1 - PRODUTOS
-2 - CLIENTES
-3 - FORNECEDORES
-4 - PEDIDOS
-5 - ITENS DE PEDIDOS
+1 - 
+2 - 
+3 - 
+4 - 
+5 -
 """
 
 def clear_console(wait_time:int=3):
