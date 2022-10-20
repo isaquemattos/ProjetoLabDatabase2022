@@ -1,12 +1,12 @@
-from conexion.oracle_queries import OracleQueries
+from connection.oracle_queries import OracleQueries
 #
 # Implementar 
 # Base montada 
 # #
 class Relatorio:
     def __init__(self):
-        with open(".sql") as f:
-            self.query_relatorio_ = f.read()
+        with open("sql/relatorio/fundos.sql") as f:
+            self.query_relatorio_fundos = f.read()
 
         with open(".sql") as f:
             self.query_relatorio_= f.read()

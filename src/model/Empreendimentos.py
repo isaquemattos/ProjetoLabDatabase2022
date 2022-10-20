@@ -1,3 +1,5 @@
+from model.fundos import Fundo
+
 ############################################################
 #Programa model.Empreendimentos
 #AUTOR.......: Daniel Marinho 
@@ -7,20 +9,24 @@
 
 class Empreendimento():
 
-    def __init__(self, segmento, nome) -> None:
-        super.__init__(nome, segmento)
-
+    def __init__(self, segmento, fundo:Fundo=None) -> None:
+        self.set_Segmento(segmento)
+        self.set_Fundo(fundo)
+        
     def get_Nome(self):
-        return self.__nome
+        return self.nome
 
     def get_Segmento(self):
-        return self.__segmento
+        return self.segmento
 
     def set_Nome(self, nome):
-        self.__nome =  nome
+        self.nome =  nome
 
     def set_Segmento(self, segmento):
-        self.__segmento = segmento
+        self.segmento = segmento
+
+    def set_Fundo(self,fundo:Fundo=None) -> Fundo:
+        self.fundo = fundo
 
     def toString (self):
         return f'Nome: {self.__nome} Segmento: {self.__nome}'

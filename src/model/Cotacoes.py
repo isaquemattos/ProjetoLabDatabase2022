@@ -12,7 +12,7 @@ class Cotacao():
 
     def __init__(self, abertura:int=None, fechamento:int=None, 
                        minimo:int=None, maximo:int=None, volume_cotas:int=None, mes:datetime=None, fundo:Fundo=None)  -> None:
-        self.set_fundo(fundo) # class Fundos
+        self.set_Fundo(fundo) # class Fundos
         self.set_Abertura(abertura)
         self.set_Fechamento(fechamento) 
         self.set_Minimo(minimo) 
