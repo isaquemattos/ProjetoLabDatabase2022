@@ -67,11 +67,12 @@ class Controller_fundos:
         ticker = int(input("ticker do fundo que irá excluir: "))        
 
         # Verifica se o cliente existe na base de dados
-        if not self.verifica_existencia_cliente(oracle, ticker):            
+        if not self.verifica_existencia_fundos(oracle, ticker):            
             # Recupera os dados do novo cliente criado transformando em um DataFrame
             df_cliente = oracle.sqlToDataFrame(f"select ticker, nome from fundos where ticker = {ticker}")
             # Revome o cliente da tabela
-            oracle.write(f"delete from fundos where ticker = {ticker}")            
+            oracle.write(f"delete from fundos where ticker = {ticker}")   
+            oracle.white(f"delete from empreendimento where = {ticker}")
             # Cria um novo objeto Cliente para informar que foi removido
             fundo_excluido = Fundo(df_cliente.ticker.values[0], df_cliente.nome.values[0])
             # Exibe os atributos do cliente excluído
